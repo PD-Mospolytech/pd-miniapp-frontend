@@ -1,0 +1,7 @@
+.Block {
+   padding: 18px;
+   border-radius: 20px;
+
+   /* dark theme */
+   background: #353535;
+}

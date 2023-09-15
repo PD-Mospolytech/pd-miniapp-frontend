@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.App {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 20px;
+   padding: 24px 240px;
+   font-family: "Montserrat";
+   font-family: "Montserrat", sans-serif;
+
+   /* dark theme */
+   color: #fff;
+}
+
+body {
+   /* dark theme */
+   background: #3a3a3a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-style: normal;
+   font-weight: 700;
+   line-height: 40px;
+   margin: 0;
+}
+
+h1 {
+   font-size: 32px;
+   margin-bottom: 8px;
+}
+
+h2 {
+   font-size: 24px;
+   margin-bottom: 8px;
+}
+
+h3 {
+   font-size: 20px;
+   line-height: normal;
+   margin: 6px 0 4px;
+}
+
+hr {
+   margin: 12px 0;
+
+   /* dark theme */
+   border: 1px solid #494949;
+}
+
+.Other-Content {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: auto;
+   grid-template-areas: 
+      "projects newproject"
+      "errorsideas errorsideas";
+   gap: 16px;
+}
+
+.Other-Content > div:nth-child(1) {
+   grid-area: projects;
+}
+
+.Other-Content > div:nth-child(2) {
+   grid-area: newproject;
+}
+
+.Other-Content > div:nth-child(3) {
+   grid-area: errorsideas;
+}
