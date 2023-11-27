@@ -4,11 +4,20 @@ interface BlockProps {
    children: any;
    margin?: string;
    width?: string;
+   className?: string;
 }
 
-const Block: React.FC<BlockProps> = ({ children, margin, width }) => {
+const Block: React.FC<BlockProps> = ({
+   children,
+   margin,
+   width,
+   className = "",
+}) => {
    return (
-      <div className="Block" style={{ margin: margin, width: width }}>
+      <div
+         className={`Block ${className}`}
+         style={{ margin: margin, width: width }}
+      >
          {children}
       </div>
    );

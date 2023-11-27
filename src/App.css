@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
 .App {
    display: flex;
    justify-content: center;
@@ -53,11 +59,43 @@ hr {
    border: 1px solid #494949;
 }
 
+.btn {
+   height: 44px;
+   padding: 0 32px;
+   border-radius: 12px;
+   background: #454545;
+   border: none;
+   color: #fff;
+   font-family: Montserrat, sans-serif;
+   font-size: 16px;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.btn-badge {
+   height: 32px;
+   border-radius: 28px;
+   padding: 0 12px;
+   font-family: Gilroy, sans-serif;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 22px;
+   text-transform: lowercase;
+   background-color: #4b6eb9;
+}
+
+.w-full_center {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
 .Other-Content {
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: auto;
-   grid-template-areas: 
+   grid-template-areas:
       "projects newproject"
       "errorsideas errorsideas";
    gap: 16px;
@@ -73,4 +111,74 @@ hr {
 
 .Other-Content > div:nth-child(3) {
    grid-area: errorsideas;
+}
+
+.App__Title {
+   display: flex;
+   gap: 10px;
+}
+
+.Title__icon {
+   background-color: #ee9e44;
+   height: 40px;
+   width: 40px;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+}
+
+.Title__icon img {
+   height: 24px;
+   width: 24px;
+}
+
+.Uploader {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   margin-bottom: 16px;
+}
+
+.Uploader .Block {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.Upload__item {
+   display: flex;
+   gap: 14px;
+   align-items: center;
+}
+
+.Upload-cover {
+   height: 80px;
+   width: 140px;
+   background-color: #d94141;
+   border-radius: 12px;
+   font-size: 44px;
+   line-height: 44px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* align-content: center; */
+}
+
+.Upload-cover i {
+   height: 44px;
+}
+
+.Upload-info h3 {
+   margin-bottom: 6px;
+}
+
+.Upload-Projects .btn-badge {
+   background-color: #d94141;
+}
+
+.Upload-Students .btn-badge,
+.Upload-Students .Upload-cover {
+   background-color: #4b6eb9;
 }
